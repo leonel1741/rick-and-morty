@@ -1,10 +1,10 @@
 import React from 'react';
-import rickAndMorty from '../assets/rick-And-Morty.jpg';
+import rickAndMorty from '../../public/rick-And-Morty.jpg';
 
 const Image = () => {
     return (
         <div className='image'>
-            <img src={rickAndMorty} alt="" />            
+            <img src={require(rickAndMorty)} alt="" />            
         </div>
     );
 };
