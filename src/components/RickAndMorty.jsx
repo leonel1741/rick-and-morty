@@ -5,7 +5,6 @@ import SearchType from './SearchType';
 const RickAndMorty = () => {
     const [location, setLocation] = useState({});
     const [typeId, setTypeId] = useState("");
-    const [numberPage, setnumberPage] = useState(1);
 
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * 126) + 1;
@@ -21,10 +20,6 @@ const RickAndMorty = () => {
     };
 
     console.log(location);
-
-    // const getPages = () => {
-    //     if ()
-    // }
 
     return (
         <div className='location-container'>
@@ -64,17 +59,7 @@ const RickAndMorty = () => {
                         <ResidentInfo url={resident} key={resident} />
                     ))
                 }
-            </ul>
-            {/* {
-                location.residents?.map((resident, index) => (
-                    
-                    // if(index === 3) {
-
-                    //     <button onClick={() => setnumberPage}>{numberPage}</button>
-                    // }
-                ))
-            } */}
-            
+            </ul>           
         </div>
     );
 };
