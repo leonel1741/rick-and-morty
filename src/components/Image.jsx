@@ -1,5 +1,5 @@
 import React from 'react';
-import rickAndMorty from '../../public/rick-And-Morty.jpg';
+import rickAndMorty from '../../public/rick-and-morty.jpg';
 
 const Image = () => {
     return (
